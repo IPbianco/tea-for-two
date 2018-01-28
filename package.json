@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IPbianco/tea-for-two/issues"
   },
-  "homepage": "https://github.com/IPbianco/tea-for-two#readme"
+  "homepage": "https://github.com/IPbianco/tea-for-two#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
