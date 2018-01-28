@@ -19,5 +19,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "readdirp": "^2.1.0"
+  },
+  "devDependencies": {
+    "cypress": "^1.4.1"
   }
 }
