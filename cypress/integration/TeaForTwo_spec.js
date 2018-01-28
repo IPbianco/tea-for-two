@@ -11,8 +11,20 @@ describe('TeaForTwo', function() {
     })
 
     it('return a page with content from the correct markdown file', function() {
-    cy.visit('http://localhost:8000/jobs')
-    cy.get('#contentDiv').contains('h1', 'Jobs at Acme Co.')
+      cy.visit('http://localhost:8000/jobs')
+      cy.get('#contentDiv').contains('h1', 'Jobs at Acme Co.')
+    })
   })
+
+  context('Requests to URLs that do not match content folders', function() {
+    it('return a 404 status code', function() {
+      cy.request({
+        url: 'http://localhost:8000/someWrongName',
+        failOnStatusCode:false
+      })
+      .then(function(resp) {
+        expect(resp.status).to.eq(404)
+      })
+    })
   })
 })
