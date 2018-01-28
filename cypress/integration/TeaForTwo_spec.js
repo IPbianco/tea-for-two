@@ -9,5 +9,10 @@ describe('TeaForTwo', function() {
         expect(resp.status).to.eq(200)
       })
     })
+
+    it('return a page with content from the correct markdown file', function() {
+    cy.visit('http://localhost:8000/jobs')
+    cy.get('#contentDiv').contains('h1', 'Jobs at Acme Co.')
+  })
   })
 })
