@@ -1,0 +1,19 @@
+{
+  "name": "tea-for-two",
+  "version": "1.0.0",
+  "description": "**NB: Please do not fork this repository, to avoid your solution being visible from this repository's GitHub page. Please clone this repository and submit your solution as a separate repository.**",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IPbianco/tea-for-two.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IPbianco/tea-for-two/issues"
+  },
+  "homepage": "https://github.com/IPbianco/tea-for-two#readme"
+}
