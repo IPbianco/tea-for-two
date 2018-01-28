@@ -8,6 +8,8 @@ A node.js application that displays HTML pages at URLs that match the names of t
 
 The file `helpers/folderInspector.js` provides the `app.js` a list with the names of every folder inside the `content` directory. When a request URL matches a name in the list, the app displays the `public/views/template.html`. This template includes a script that can be found in `public/js/index.js`. This script gets the content from the corresponding markdown file, converts this to HTML format and appends it to the content placeholder.
 
+The names of the folders inside the `content` directory are not hardcoded so that new folders with markdown files can be added at any time without changing any code (the new valid URLs are created automatically).
+
 ## Tech Stack
 
 The application was built using the following technologies:
